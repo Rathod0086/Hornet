@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hornet</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <script>
+      window.onload = function () {
+        // Check if the user has already been redirected to 'welcome.html' in this session
+        if (!sessionStorage.getItem("redirected")) {
+          setTimeout(function () {
+            window.location.href = "welcome.html";
+            // Set the 'redirected' flag to prevent future redirects in this session
+            sessionStorage.setItem("redirected", "true");
+          }, 100000); // Redirect after 10 seconds
+        }
+      };
+    </script>
+  </head>
+  <body onload="first.html">
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="/images/Image.png" alt="Hornet Logo" width="60px" />
+          <span>Hornet</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="mloading.html">Movies</a></li>
+          <li><a href="sloading.html">Series</a></li>
+          <li><a href="lloading.html">My List</a></li>
+        </ul>
+        <div class="search-container">
+          <input type="text" id="search" placeholder="Search..." />
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/search.svg"
+            id="search-icon"
+            alt="search button"
+          />
+        </div>
+      </nav>
+    </header>
+    <div class="welcome-text">
+      <p>Welcome again,</p>
+      <p>Tushar Rathods</p>
+    </div>
+    <main>
+      <section class="featured">
+        <h2>Features</h2>
+        <div class="movie-list">
+          <div class="movie-card">
+            <a href="/Netflix/home.html">
+              <img src="/images/Netflix.png" alt="Movie Poster"
+            /></a>
+          </div>
+
+          <div class="movie-card">
+            <a href="/Prime Video/Phome.html">
+              <img src="/images/prime video.webp" alt="Movie Poster"
+            /></a>
+          </div>
+          <div class="movie-card">
+            <a href="/You Tube/Yhome.html">
+              <img src="/images/tube.webp" alt="Movie Poster"
+            /></a>
+          </div>
+          <div class="movie-card">
+            <img src="/images/Disney Hotstar.jpg" alt="Movie Poster" />
+          </div>
+          <div class="movie-card">
+            <img src="/images/Crunchyroll.png" alt="Movie Poster" />
+          </div>
+          <div class="movie-card">
+            <img src="/images/jio-cineam.jpg" alt="Movie Poster" />
+          </div>
+          <div class="movie-card">
+            <img src="/images/amazon.jpeg" alt="Movie Poster" />
+          </div>
+        </div>
+      </section>
+      <section class="top-rated">
+        <h2>Top Rated</h2>
+        <div class="movie-list">
+          <div class="movie-item">
+            <a href="/files/strangerthings.html">
+              <div class="movie-card">
+                <img src="/images/stranger-things.jpg" alt="Movie Poster" />
+              </div>
+            </a>
+            <p>Stranger Things</p>
+          </div>
+          <div class="movie-item">
+            <a href="/files/mirzapur.html">
+              <div class="movie-card">
+                <img src="/images/Mirzapur.webp" alt="Movie Poster" />
+              </div>
+            </a>
+            <p>Mirzapur</p>
+          </div>
+          <div class="movie-item">
+            <a href="/files/theboys.html">
+              <div class="movie-card">
+                <img src="/images/the-boys.jpg" alt="Movie Poster" />
+              </div>
+            </a>
+            <p>The Boys</p>
+          </div>
+          <div class="movie-item">
+            <a href="/files/gameofthrones.html">
+              <div class="movie-card">
+                <img src="/images/Game-of-Thrones-.jpeg" alt="Movie Poster" />
+              </div>
+            </a>
+            <p>Game of Thrones</p>
+          </div>
+          <div class="movie-item">
+            <a href="/files/moneyheist.html">
+              <div class="movie-card">
+                <img src="/images/money-heist.jpg" alt="Movie Poster" />
+              </div>
+            </a>
+            <p>Money Heist</p>
+          </div>
+          <div class="movie-item">
+            <a href="/files/aliceinborderland.html">
+              <div class="movie-card">
+                <img src="/images/alice-in-borderland.jpg" alt="Movie Poster" />
+              </div>
+            </a>
+            <p>Alice in Borderland</p>
+          </div>
+          <div class="movie-item">
+            <a href="/files/squidgame.html">
+              <div class="movie-card">
+                <img src="/images/squid-game.jpg" alt="Movie Poster" />
+              </div>
+            </a>
+            <p>Squid Game</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="trending">
+        <h2>Anime</h2>
+        <div class="movie-list">
+          <div class="movie-item">
+            <a href="/files/jjk.html">
+              <div class="movie-card">
+                <img src="/images/jj.jpg" alt="Movie Poster" />
+              </div>
+            </a>
+            <p>Jujutsu Kaisen</p>
+          </div>
+          <div class="movie-item">
+            <a href="/files/naruto.html">
+              <div class="movie-card">
+                <img src="/images/naruto.jpg" alt="Movie Poster" />
+              </div>
+            </a>
+            <p>Naruto</p>
+          </div>
+          <div class="movie-item">
+            <a href="/files/demonslayer.html">
+              <div class="movie-card">
+                <img src="/images/demon.webp" alt="Movie Poster" />
+              </div>
+            </a>
+            <p>Demon Slayer</p>
+          </div>
+          <div class="movie-item">
+            <a href="/files/classroomoftheelite.html">
+              <div class="movie-card">
+                <img src="/images/classroom.jpg" alt="Movie Poster" />
+              </div>
+            </a>
+            <p>Classroom of the Elite</p>
+          </div>
+          <div class="movie-item">
+            <a href="/files/dragonballz.html">
+              <div class="movie-card">
+                <img src="/images/dragon ball z.webp" alt="Movie Poster" />
+              </div>
+            </a>
+            <p>Dragon Ball Z</p>
+          </div>
+          <div class="movie-item">
+            <a href="/files/tomodachigame.html">
+              <div class="movie-card">
+                <img src="/images/tomodachi game.png" alt="Movie Poster" />
+              </div>
+            </a>
+            <p>Tomodachi Game</p>
+          </div>
+          <div class="movie-item">
+            <a href="/files/tokyorevengers.html">
+              <div class="movie-card">
+                <img src="/images/tokyo revengers.webp" alt="Movie Poster" />
+              </div>
+            </a>
+            <p>Tokyo Revengers</p>
+          </div>
+          <div class="movie-item">
+            <a href="/files/sololeveling.html">
+              <div class="movie-card">
+                <img src="/images/solo leveling.jpg" alt="Movie Poster" />
+              </div>
+            </a>
+            <p>Solo Leveling</p>
+          </div>
+          <div class="movie-item">
+            <a href="/files/deathnote.html">
+              <div class="movie-card">
+                <img src="/images/death-note.jpg" alt="Movie Poster" />
+              </div>
+            </a>
+            <p>Death Note</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="kdrama">
+        <h2>Kdrama</h2>
+        <div class="movie-list">
+          <div class="movie-item">
+            <a href="/files/vincenzo.html">
+              <div class="movie-card">
+                <img src="/images/vincenzo.jpg" alt="Movie Poster" />
+              </div>
+            </a>
+            <p>Vincenzo</p>
+          </div>
+          <div class="movie-item">
+            <a href="/files/queenoftears.html">
+              <div class="movie-card">
+                <img src="/images/queen.jpg" alt="Movie Poster" />
+              </div>
+            </a>
+            <p>Queen of Tears</p>
+          </div>
+          <div class="movie-item">
+            <a href="/files/sweethome.html">
+              <div class="movie-card">
+                <img src="/images/sweet.webp" alt="Movie Poster" />
+              </div>
+            </a>
+            <p>Sweet Home</p>
+          </div>
+          <div class="movie-item">
+            <a href="/files/traintobusan.html">
+              <div class="movie-card">
+                <img src="/images/train-to-busan.jpg" alt="Movie Poster" />
+              </div>
+            </a>
+            <p>Train to Busan</p>
+          </div>
+          <div class="movie-item">
+            <a href="/files/businessproposal.html">
+              <div class="movie-card">
+                <img src="/images/business.webp" alt="Movie Poster" />
+              </div>
+            </a>
+            <p>Business Proposal</p>
+          </div>
+          <div class="movie-item">
+            <a href="/files/kingtheland.html">
+              <div class="movie-card">
+                <img src="/images/king.webp" alt="Movie Poster" />
+              </div>
+            </a>
+            <p>King the Land</p>
+          </div>
+          <div class="movie-item">
+            <a href="/files/hierarchy.html">
+              <div class="movie-card">
+                <img src="/images/hierarchy.webp" alt="Movie Poster" />
+              </div>
+            </a>
+            <p>Hierarchy</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="movies">
+        <h2>Movies</h2>
+        <div class="movie-list">
+          <div class="movie-item">
+            <a href="/files/maharaja.html">
+              <div class="movie-card">
+                <img src="/images/maharaja.jpg" alt="Movie Poster" />
+              </div>
+            </a>
+            <p>Maharaja</p>
+          </div>
+          <div class="movie-item">
+            <a href="/files/kalki.html">
+              <div class="movie-card">
+                <img src="/images/kalki.jpeg" alt="Movie Poster" />
+              </div>
+            </a>
+            <p>Kalki</p>
+          </div>
+          <div class="movie-item">
+            <a href="/files/rrr.html">
+              <div class="movie-card">
+                <img src="/images/rrr.jpeg" alt="Movie Poster" />
+              </div>
+            </a>
+            <p>RRR</p>
+          </div>
+          <div class="movie-item">
+            <a href="/files/leo.html">
+              <div class="movie-card">
+                <img src="/images/leo.jpg" alt="Movie Poster" />
+              </div>
+            </a>
+            <p>LEO</p>
+          </div>
+          <div class="movie-item">
+            <a href="/files/animal.html">
+              <div class="movie-card">
+                <img src="/images/animal.jpeg" alt="Movie Poster" />
+              </div>
+            </a>
+            <p>Animal</p>
+          </div>
+          <div class="movie-item">
+            <a href="/files/gunturkaram.html">
+              <div class="movie-card">
+                <img src="/images/guntur.jpg" alt="Movie Poster" />
+              </div>
+            </a>
+            <p>Guntur Karam</p>
+          </div>
+          <div class="movie-item">
+            <a href="/files/salaar.html">
+              <div class="movie-card">
+                <img src="/images/slaar.avif" alt="Movie Poster" />
+              </div>
+            </a>
+            <p>Salaar</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <hr />
+    <footer>
+      <div class="footer-container">
+        <div class="footer-links">
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Media Center</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Ways to Watch</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Cookie Preferences</a></li>
+            <li><a href="#">Corporate Information</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/_tush_._.__0086/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.twitter.com" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.youtube.com" target="_blank">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://www.facebook.com" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.whatsapp.com" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+        <p>&copy; 2024 Hornet. All rights reserved.</p>
+      </div>
+    </footer>
+    <div id="loader" class="loader"></div>
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>
