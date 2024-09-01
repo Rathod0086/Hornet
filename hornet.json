@@ -1,0 +1,99 @@
+{
+    "pageTitle": "Hornet",
+    "header": {
+      "logo": {
+        "src": "/images/Image.png",
+        "alt": "Hornet Logo",
+        "width": "60px"
+      },
+      "navLinks": [
+        { "text": "Home", "href": "index.html" },
+        { "text": "Movies", "href": "mloading.html" },
+        { "text": "Series", "href": "sloading.html" },
+        { "text": "My List", "href": "lloading.html" }
+      ]
+    },
+    "welcomeText": {
+      "greeting": "Welcome again,",
+      "userName": "Tushar Rathods"
+    },
+    "sections": [
+      {
+        "title": "Features",
+        "movies": [
+          { "href": "/Netflix/home.html", "imgSrc": "/images/Netflix.png", "imgAlt": "Netflix Logo" },
+          { "href": "/Prime Video/Phome.html", "imgSrc": "/images/prime video.webp", "imgAlt": "Prime Video Logo" },
+          { "href": "/You Tube/Yhome.html", "imgSrc": "/images/tube.webp", "imgAlt": "YouTube Logo" },
+          { "imgSrc": "/images/Disney Hotstar.jpg", "imgAlt": "Disney Hotstar Logo" },
+          { "imgSrc": "/images/Crunchyroll.png", "imgAlt": "Crunchyroll Logo" },
+          { "imgSrc": "/images/jio-cineam.jpg", "imgAlt": "Jio Cinema Logo" },
+          { "imgSrc": "/images/amazon.jpeg", "imgAlt": "Amazon Logo" }
+        ]
+      },
+      {
+        "title": "Top Rated",
+        "movies": [
+          { "href": "/files/strangerthings.html", "imgSrc": "/images/stranger-things.jpg", "imgAlt": "Stranger Things Poster", "name": "Stranger Things" },
+          { "href": "/files/mirzapur.html", "imgSrc": "/images/Mirzapur.webp", "imgAlt": "Mirzapur Poster", "name": "Mirzapur" },
+          { "href": "/files/theboys.html", "imgSrc": "/images/the-boys.jpg", "imgAlt": "The Boys Poster", "name": "The Boys" },
+          { "href": "/files/gameofthrones.html", "imgSrc": "/images/Game-of-Thrones-.jpeg", "imgAlt": "Game of Thrones Poster", "name": "Game of Thrones" },
+          { "href": "/files/moneyheist.html", "imgSrc": "/images/money-heist.jpg", "imgAlt": "Money Heist Poster", "name": "Money Heist" },
+          { "href": "/files/aliceinborderland.html", "imgSrc": "/images/alice-in-borderland.jpg", "imgAlt": "Alice in Borderland Poster", "name": "Alice in Borderland" },
+          { "href": "/files/squidgame.html", "imgSrc": "/images/squid-game.jpg", "imgAlt": "Squid Game Poster", "name": "Squid Game" }
+        ]
+      },
+      {
+        "title": "Anime",
+        "movies": [
+          { "href": "/files/jjk.html", "imgSrc": "/images/jj.jpg", "imgAlt": "Jujutsu Kaisen Poster", "name": "Jujutsu Kaisen" },
+          { "href": "/files/naruto.html", "imgSrc": "/images/naruto.jpg", "imgAlt": "Naruto Poster", "name": "Naruto" },
+          { "href": "/files/demonslayer.html", "imgSrc": "/images/demon.webp", "imgAlt": "Demon Slayer Poster", "name": "Demon Slayer" },
+          { "href": "/files/classroomoftheelite.html", "imgSrc": "/images/classroom.jpg", "imgAlt": "Classroom of the Elite Poster", "name": "Classroom of the Elite" },
+          { "href": "/files/dragonballz.html", "imgSrc": "/images/dragon ball z.webp", "imgAlt": "Dragon Ball Z Poster", "name": "Dragon Ball Z" },
+          { "href": "/files/tomodachigame.html", "imgSrc": "/images/tomodachi game.png", "imgAlt": "Tomodachi Game Poster", "name": "Tomodachi Game" },
+          { "href": "/files/tokyorevengers.html", "imgSrc": "/images/tokyo revengers.webp", "imgAlt": "Tokyo Revengers Poster", "name": "Tokyo Revengers" },
+          { "href": "/files/sololeveling.html", "imgSrc": "/images/solo leveling.jpg", "imgAlt": "Solo Leveling Poster", "name": "Solo Leveling" },
+          { "href": "/files/deathnote.html", "imgSrc": "/images/death-note.jpg", "imgAlt": "Death Note Poster", "name": "Death Note" }
+        ]
+      },
+      {
+        "title": "Kdrama",
+        "movies": [
+          { "href": "/files/vincenzo.html", "imgSrc": "/images/vincenzo.jpg", "imgAlt": "Vincenzo Poster", "name": "Vincenzo" },
+          { "href": "/files/queenoftears.html", "imgSrc": "/images/queen.jpg", "imgAlt": "Queen of Tears Poster", "name": "Queen of Tears" },
+          { "href": "/files/sweethome.html", "imgSrc": "/images/sweet.webp", "imgAlt": "Sweet Home Poster", "name": "Sweet Home" },
+          { "href": "/files/traintobusan.html", "imgSrc": "/images/train-to-busan.jpg", "imgAlt": "Train to Busan Poster", "name": "Train to Busan" },
+          { "href": "/files/businessproposal.html", "imgSrc": "/images/business.webp", "imgAlt": "Business Proposal Poster", "name": "Business Proposal" },
+          { "href": "/files/kingtheland.html", "imgSrc": "/images/king.webp", "imgAlt": "King the Land Poster", "name": "King the Land" },
+          { "href": "/files/hierarchy.html", "imgSrc": "/images/hierarchy.webp", "imgAlt": "Hierarchy Poster", "name": "Hierarchy" }
+        ]
+      },
+      {
+        "title": "Movies",
+        "movies": [
+          { "href": "/files/maharaja.html", "imgSrc": "/images/maharaja.jpg", "imgAlt": "Maharaja Poster", "name": "Maharaja" },
+          { "href": "/files/kalki.html", "imgSrc": "/images/kalki.jpeg", "imgAlt": "Kalki Poster", "name": "Kalki" },
+          { "href": "/files/rrr.html", "imgSrc": "/images/rrr.jpeg", "imgAlt": "RRR Poster", "name": "RRR" },
+          { "href": "/files/leo.html", "imgSrc": "/images/leo.jpg", "imgAlt": "LEO Poster", "name": "LEO" },
+          { "href": "/files/animal.html", "imgSrc": "/images/animal.jpeg", "imgAlt": "Animal Poster", "name": "Animal" },
+          { "href": "/files/gunturkaram.html", "imgSrc": "/images/guntur.jpg", "imgAlt": "Guntur Karam Poster", "name": "Guntur Karam" },
+          { "href": "/files/salaar.html", "imgSrc": "/images/slaar.avif", "imgAlt": "Salaar Poster", "name": "Salaar" }
+        ]
+      }
+    ],
+    "footer": {
+      "links": [
+        "FAQ", "Help Center", "Account", "Media Center", "Investor Relations", "Jobs",
+        "Ways to Watch", "Terms of Use", "Privacy", "Cookie Preferences", "Corporate Information", "Contact Us"
+      ],
+      "socialLinks": [
+        { "platform": "Instagram", "url": "https://www.instagram.com/_tush_._.__0086/" },
+        { "platform": "Twitter", "url": "https://www.twitter.com" },
+        { "platform": "YouTube", "url": "https://www.youtube.com" },
+        { "platform": "Facebook", "url": "https://www.facebook.com" },
+        { "platform": "WhatsApp", "url": "https://www.whatsapp.com" }
+      ],
+      "copyright": "&copy; 2024 Hornet. All rights reserved."
+    }
+  }
+  

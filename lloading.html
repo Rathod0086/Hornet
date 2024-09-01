@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading Page</title>
+  <style>
+    body {
+      background-color: #212121;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .loader {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed; /* Center loader on screen */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0.7); /* Corrected scale */
+      cursor: not-allowed;
+      z-index: 1000; /* Ensure it's on top of all content */
+    }
+
+    .central {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 10em;
+      height: 10em;
+      border-radius: 50%;
+      box-shadow: 0.5em 1em 1em red,
+        -0.5em 0.5em 1em orange,
+        0.5em -0.5em 1em orangered,
+        -0.5em -0.5em 1em yellow;
+      background-color: #212121;
+    }
+
+    .external-shadow {
+      width: 10em;
+      height: 10em;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      box-shadow: 0.5em 0.5em 3em red,
+        -0.5em 0.5em 3em orange,
+        0.5em -0.5em 3em orangered,
+        -0.5em -0.5em 3em yellow;
+      z-index: 999;
+      animation: rotate 3s linear infinite;
+      background-color: #212121;
+    }
+
+    .intern {
+      position: absolute;
+      color: white;
+      font-size: 1.5em; /* Adjust size as needed */
+      z-index: 9999;
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(180deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Loader HTML -->
+  <div class="loader">
+    <div class="intern">0%</div> <!-- Start with initial text -->
+    <div class="external-shadow">
+      <div class="central"></div>
+    </div>
+  </div>
+
+  <!-- JavaScript to handle redirection -->
+  <script>
+    // Update text content every 60ms for 6 seconds
+    let percent = 0;
+    const intern = document.querySelector('.intern');
+    const interval = setInterval(function () {
+      percent += 1;
+      intern.textContent = percent + '%';
+      if (percent >= 100) {
+        clearInterval(interval);
+      }
+    }, 60); // Update every 60ms
+
+    // Redirect back to the main page after 6 seconds
+    setTimeout(function () {
+      window.location.href = "mylist.html";
+    }, 4000); // Redirect after 6 seconds
+  </script>
+</body>
+</html>
